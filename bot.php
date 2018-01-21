@@ -40,7 +40,7 @@ if (!is_null($events['events'])) {
 		        $data = $client->GetOilPrice($params);
               $ob = $data->GetOilPriceResult;
             $xml = new SimpleXMLElement($ob);
-			$text = "ราคาน้ำมันวันนี้ ตามด้านล่างเลยนะคร๊าบ ขอบคุณครับ"."\r\n";
+			$text = "ราคาน้ำมันวันนี้ ตามด้านล่างเลยนะคร๊าบ ขอบคุณครับคุณ ". $events[0]['source']['userId'] ."\r\n";
                // PRICE_DATE , PRODUCT ,PRICE
               foreach ($xml  as  $key =>$val) {  
 			
