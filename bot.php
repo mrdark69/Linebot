@@ -15,7 +15,8 @@ if (!is_null($events['events'])) {
 		// Reply only when message sent is in 'text' format
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
-			$text = $event['message']['text'];
+			
+			//$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
@@ -39,7 +40,7 @@ if (!is_null($events['events'])) {
 		        $data = $client->GetOilPrice($params);
               $ob = $data->GetOilPriceResult;
             $xml = new SimpleXMLElement($ob);
-			$text = "";
+			$text = "ราคาน้ำมันวันนี้ ตามด้านล่างเลยนะคร๊าบ ขอบคุณครับ"."\r\n";
                // PRICE_DATE , PRODUCT ,PRICE
               foreach ($xml  as  $key =>$val) {  
 			
