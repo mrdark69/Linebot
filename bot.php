@@ -39,12 +39,12 @@ if (!is_null($events['events'])) {
 		        $data = $client->GetOilPrice($params);
               $ob = $data->GetOilPriceResult;
             $xml = new SimpleXMLElement($ob);
-           
+			$text = "";
                // PRICE_DATE , PRODUCT ,PRICE
               foreach ($xml  as  $key =>$val) {  
-				$text = "";
+			
             if($val->PRICE != ''){
-				$text .=  'kk' . $val->PRODUCT .'  '.$val->PRICE.' บาท<br>';
+				$text .=  $val->PRODUCT .'  '.$val->PRICE.' บาท\r\n';
                 }
 
                }
