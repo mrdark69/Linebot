@@ -44,7 +44,7 @@ if (!is_null($events['events'])) {
               foreach ($xml  as  $key =>$val) {  
 				$text = "";
             if($val->PRICE != ''){
-				$text .= $val->PRODUCT .'  '.$val->PRICE.' บาท<br>';
+				$text .=  'kk' . $val->PRODUCT .'  '.$val->PRICE.' บาท<br>';
                 }
 
                }
