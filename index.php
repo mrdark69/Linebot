@@ -18,11 +18,13 @@ $ob = $data->GetOilPriceResult;
 $xml = new SimpleXMLElement($ob);
 
 // PRICE_DATE , PRODUCT ,PRICE
-foreach ($xml  as  $key =>$val) {  
 $text = "";
+foreach ($xml  as  $key =>$val) {  
+
 if($val->PRICE != ''){
-$text .=  'kk' . $val->PRODUCT .'  '.$val->PRICE.' บาท<br>';
+$text .=  $val->PRODUCT .'  '.$val->PRICE.' บาท<br>';
 }
 
-echo $text;
+
 }
+echo $text;
