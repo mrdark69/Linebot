@@ -21,7 +21,7 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 
-			if($text == 'ราคาน้ำมัน'){
+			if($event['message']['text'] == 'ราคาน้ำมัน'){
 
 				$client = new SoapClient("http://www.pttplc.com/webservice/pttinfo.asmx?WSDL",
 		    	array(
