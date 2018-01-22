@@ -2,8 +2,8 @@
 $access_token = 'ynA5MCG/ofxR7Pi1KKef38pKzcAs9QBmHYfKhXiKJ6ZUH5VMcFg0j5G44JTWlu9FCRIjH51WbEOTIVVWvyq+bbQc0/gxyu3ikfWBGkKSJrn80CzDCHQAmL33q9WWMKBht2IxcsOAwBIyTg6Yl20kAAdB04t89/1O/w1cDnyilFU=';
 
 
-$proxy = 'http://fixie:Ab98JkLVuPQiz4J@velodrome.usefixie.com:80';
-$proxyauth = 'mrdark6996@gmail.com:Nui14042525';
+// $proxy = 'http://fixie:Ab98JkLVuPQiz4J@velodrome.usefixie.com:80';
+// $proxyauth = 'mrdark6996@gmail.com:Nui14042525';
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
@@ -74,8 +74,8 @@ if (!is_null($events['events'])) {
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
             curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-            curl_setopt($ch, CURLOPT_PROXY, $proxy);
-            curl_setopt($ch, CURLOPT_PROXYUSERPWD, $proxyauth);
+            // curl_setopt($ch, CURLOPT_PROXY, $proxy);
+            // curl_setopt($ch, CURLOPT_PROXYUSERPWD, $proxyauth);
 			$result = curl_exec($ch);
 			curl_close($ch);
 
