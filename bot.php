@@ -21,10 +21,9 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			if($event['message']['text'] == '#สมัครใช้รายรับรายจ่าย'){
-				$messages = [
-					'type' => 'text',
-					'text' => 'ยินดีให้บริการครับ'
-				];
+
+				$text = 'ยินดีให้บริการครับ';
+				
 			}
 
 			if($event['message']['text'] == 'ราคาน้ำมัน'){
