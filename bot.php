@@ -30,7 +30,7 @@ if (!is_null($events['events'])) {
 
 			$pos = strrpos($event['message']['text'], "เงี่ยน");
 
-			if($pos){
+			if($pos || $event['message']['text'] == "เงี่ยน"){
 				$text = 'เงี่ยนพ่อง!!!';
 			}
 
