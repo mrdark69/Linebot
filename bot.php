@@ -26,10 +26,12 @@ if (!is_null($events['events'])) {
 				
 			}
 
-			if($event['message']['text'] == 'เงี่ยน'){
+			
 
+			$pos = strrpos($$event['message']['text'], "เงี่ยน");
+
+			if($pos){
 				$text = 'เงี่ยนพ่อง!!!';
-				
 			}
 
 			if($event['message']['text'] == 'ราคาน้ำมัน'){
