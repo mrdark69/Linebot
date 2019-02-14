@@ -26,6 +26,12 @@ if (!is_null($events['events'])) {
 				
 			}
 
+			if($event['message']['text'] == 'เงี่ยน'){
+
+				$text = 'เงี่ยนพ่อง!!!';
+				
+			}
+
 			if($event['message']['text'] == 'ราคาน้ำมัน'){
 
 				$client = new SoapClient("http://www.pttplc.com/webservice/pttinfo.asmx?WSDL",
