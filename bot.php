@@ -28,7 +28,7 @@ if (!is_null($events['events'])) {
 
 			
 
-			$pos = strrpos($$event['message']['text'], "เงี่ยน");
+			$pos = strrpos($event['message']['text'], "เงี่ยน");
 
 			if($pos){
 				$text = 'เงี่ยนพ่อง!!!';
